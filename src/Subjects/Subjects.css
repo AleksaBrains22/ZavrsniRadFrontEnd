@@ -1,0 +1,44 @@
+.searchBar {
+  width: 40%;
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d3d3d3;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.searchBarDiv {
+  text-align: center;
+  padding: 10px;
+}
+
+.subjectDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+  max-width: 650px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.subject {
+  border: 1px solid lightgray;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  color: #747577;
+}
+.subjectName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.razred {
+  font-size: 14px;
+  color: #747577;
+}

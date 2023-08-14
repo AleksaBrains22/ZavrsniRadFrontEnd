@@ -1,0 +1,24 @@
+export const checkUser = (roles) => {
+  const user = localStorage.getItem("user");
+  let user_obj; //
+  if (user) {
+    user_obj = JSON.parse(user);
+  }
+  console.log(user);
+  if (!user || user === undefined) {
+    const err = {
+      cause: "login",
+      message: "Korisnik nije ulogovan",
+    };
+    throw err;
+  } else if (roles) {
+    if (!roles.includes(user_obj.role)) {
+      const err = {
+        cause: "security",
+        message: "Korisnik nema pravo pristupa",
+      };
+      throw err;
+    }
+  }
+  return user_obj;
+};
